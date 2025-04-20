@@ -11,7 +11,7 @@ $(document).ready(function() {
     // download brochure
     $('.downloadBrochure').click(function() {
       const link = document.createElement('a');
-      link.href = '../docs/file/brochure.pdf';
+      link.href = 'https://github.com/zahidbenu/project-my_tutor/docs/file/brochure.pdf';
       link.download = 'brochure.pdf';
       document.body.appendChild(link);
       link.click();
