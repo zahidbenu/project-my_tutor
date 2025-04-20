@@ -33,10 +33,6 @@
 }
 
 @layer components {
-  /* .container {
-    @apply mx-auto px-3;
-  } */
-
   .btn {
     @apply block font-medium text-white leading-[24px] bg-[#1B99D4] rounded-[5px] transition duration-300 hover:bg-[#017CBB];
   }
@@ -52,20 +48,18 @@
   .slick-dots li.slick-active button {
     @apply w-[33px] h-[8px] rounded-[4px];
   }
+
+   /* footer */ 
+   .social-link {
+    @apply w-[50px] h-[50px] flex justify-center items-center rounded-[4px] bg-[#31A3D8] hover:bg-[#56b4df];
+  }
+
+  .footer-menu li a {
+    @apply font-medium leading-[26px] flex items-center mb-[27px] transform transition-transform duration-300 hover:translate-x-1 hover:text-[#dbe6eb];
+  }
+
+  .footer-contact li a {
+    @apply font-medium leading-[26.08px] flex mb-[15px] transition duration-300 hover:text-[#dbe6eb];
+  }
 }
 
-@layer utilities {
-   
-    /* footer */ 
-    .social-link {
-        @apply w-[50px] h-[50px] flex justify-center items-center rounded-[4px] bg-[#31A3D8] hover:bg-[#56b4df];
-    }
-
-    .footer-menu li a {
-      @apply font-medium leading-[26px] flex items-center mb-[27px] transform transition-transform duration-300 hover:translate-x-1 hover:text-[#dbe6eb];
-    }
-
-    .footer-contact li a {
-      @apply font-medium leading-[26.08px] flex mb-[15px] transition duration-300 hover:text-[#dbe6eb];
-    }
-}

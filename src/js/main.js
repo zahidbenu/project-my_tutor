@@ -11,7 +11,7 @@ $(document).ready(function() {
     // download brochure
     $('.downloadBrochure').click(function() {
       const link = document.createElement('a');
-      link.href = '../public/brochure.pdf';
+      link.href = '../docs/brochure.pdf';
       link.download = 'brochure.pdf';
       document.body.appendChild(link);
       link.click();
