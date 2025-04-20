@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JQuery -->
-    <script src="src/js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind Compiled CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="tailwind/styles.css" />
     
     <!-- <base href="/" /> -->
     <title>My_Tutor</title>
@@ -54,7 +54,7 @@
         <!-- mobile menu -->
         <div class="menu-toggle hidden absolute top-16 left-0 w-full shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] bg-white max-sm:top-14">
             <div class="container">
-                <nav class="relative">
+                <nav class="relative z-50">
                     <ul class="pt-5 pb-8">
                         <li><a href="" class="group px-1">About Us <span></span></a></li>
                         <li><a href="" class="group px-1">Courses <span></span></a></li>
@@ -226,7 +226,7 @@
             
             <div class="grid grid-cols-3 gap-[35px] px-[35px] max-lg:grid-cols-1 max-xs:px-0">
                 <!-- single feature box 1 -->
-                <div class="flex flex-col gap-[25px] items-center text-center shadow-[0.914px_4.57px_45.7px_0px_rgba(84,99,122,0.10)] bg-white rounded-[16px] py-[35px] px-[30px]">
+                <div class="flex flex-col gap-[25px] items-center text-center shadow-[0.914px_4.57px_45.7px_0px_rgba(84,99,122,0.10)] bg-white rounded-[16px] py-[35px] px-[30px] transform transition-transform duration-300 hover:-translate-y-1">
                     <span class="w-[70px] h-[70px] rounded-full bg-[#1B99D4] flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
                             <path d="M31.7818 35.4399C32.0048 32.7622 32.0511 24.2273 24.2284 20.4396C27.4819 18.8621 29.7319 16.2794 30.927 12.7446C31.0375 12.4174 30.862 12.0628 30.5352 11.9524C30.2065 11.8416 29.8537 12.0174 29.7429 12.3442C28.5125 15.9837 26.0472 18.5103 22.4153 19.8537C22.1703 19.9446 22.0073 20.1784 22.0073 20.4399C22.0073 20.7014 22.1703 20.9352 22.4153 21.0262C30.922 24.1735 30.7509 32.9822 30.5271 35.4399H28.6421C27.9257 28.2735 22.9335 26.1837 21.2984 25.6901V21.8013C21.2984 21.4561 21.0186 21.1763 20.6734 21.1763C20.3282 21.1763 20.0484 21.4561 20.0484 21.8013V25.6901C18.4133 26.1837 13.4211 28.2735 12.7047 35.4399H10.8208C10.743 34.5749 10.6649 32.8017 11.0442 30.7192C11.1061 30.3795 10.8809 30.0542 10.5413 29.9922C10.2007 29.9324 9.87598 30.1558 9.81433 30.4951C9.42702 32.6216 9.48623 34.4656 9.5655 35.4399C8.50849 35.4034 7.62041 36.2556 7.62256 37.3149C7.62256 38.3489 8.46362 39.1899 9.49756 39.1899H31.8493C32.8832 39.1899 33.7243 38.3489 33.7243 37.3149C33.7243 35.4399 31.7818 35.4399 31.7818 35.4399ZM20.6731 26.8105C21.5203 27.0012 26.6375 28.4395 27.3897 35.4399H13.9571C14.7097 28.4361 19.8314 27 20.6731 26.8105ZM31.8493 37.9399H9.49756C9.15302 37.9399 8.87256 37.6595 8.87256 37.3149C8.87256 36.9704 9.15302 36.6899 9.49756 36.6899H31.8493C32.1938 36.6899 32.4743 36.9704 32.4743 37.3149C32.4743 37.6595 32.1938 37.9399 31.8493 37.9399Z" fill="white"/>
@@ -239,7 +239,7 @@
                 </div>
 
                  <!-- single feature box 2 -->
-                 <div class="flex flex-col gap-[25px] items-center text-center shadow-[0.914px_4.57px_45.7px_0px_rgba(84,99,122,0.10)] bg-white rounded-[16px] py-[35px] px-[30px]">
+                 <div class="flex flex-col gap-[25px] items-center text-center shadow-[0.914px_4.57px_45.7px_0px_rgba(84,99,122,0.10)] bg-white rounded-[16px] py-[35px] px-[30px] transform transition-transform duration-300 hover:-translate-y-1">
                     <span class="w-[70px] h-[70px] rounded-full bg-[#1B99D4] flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
                             <path d="M31.7818 35.4399C32.0048 32.7622 32.0511 24.2273 24.2284 20.4396C27.4819 18.8621 29.7319 16.2794 30.927 12.7446C31.0375 12.4174 30.862 12.0628 30.5352 11.9524C30.2065 11.8416 29.8537 12.0174 29.7429 12.3442C28.5125 15.9837 26.0472 18.5103 22.4153 19.8537C22.1703 19.9446 22.0073 20.1784 22.0073 20.4399C22.0073 20.7014 22.1703 20.9352 22.4153 21.0262C30.922 24.1735 30.7509 32.9822 30.5271 35.4399H28.6421C27.9257 28.2735 22.9335 26.1837 21.2984 25.6901V21.8013C21.2984 21.4561 21.0186 21.1763 20.6734 21.1763C20.3282 21.1763 20.0484 21.4561 20.0484 21.8013V25.6901C18.4133 26.1837 13.4211 28.2735 12.7047 35.4399H10.8208C10.743 34.5749 10.6649 32.8017 11.0442 30.7192C11.1061 30.3795 10.8809 30.0542 10.5413 29.9922C10.2007 29.9324 9.87598 30.1558 9.81433 30.4951C9.42702 32.6216 9.48623 34.4656 9.5655 35.4399C8.50849 35.4034 7.62041 36.2556 7.62256 37.3149C7.62256 38.3489 8.46362 39.1899 9.49756 39.1899H31.8493C32.8832 39.1899 33.7243 38.3489 33.7243 37.3149C33.7243 35.4399 31.7818 35.4399 31.7818 35.4399ZM20.6731 26.8105C21.5203 27.0012 26.6375 28.4395 27.3897 35.4399H13.9571C14.7097 28.4361 19.8314 27 20.6731 26.8105ZM31.8493 37.9399H9.49756C9.15302 37.9399 8.87256 37.6595 8.87256 37.3149C8.87256 36.9704 9.15302 36.6899 9.49756 36.6899H31.8493C32.1938 36.6899 32.4743 36.9704 32.4743 37.3149C32.4743 37.6595 32.1938 37.9399 31.8493 37.9399Z" fill="white"/>
@@ -252,7 +252,7 @@
                 </div>
 
                  <!-- single feature box 3 -->
-                 <div class="flex flex-col gap-[25px] items-center text-center shadow-[0.914px_4.57px_45.7px_0px_rgba(84,99,122,0.10)] bg-white rounded-[16px] py-[35px] px-[30px]">
+                 <div class="flex flex-col gap-[25px] items-center text-center shadow-[0.914px_4.57px_45.7px_0px_rgba(84,99,122,0.10)] bg-white rounded-[16px] py-[35px] px-[30px] transform transition-transform duration-300 hover:-translate-y-1">
                     <span class="w-[70px] h-[70px] rounded-full bg-[#1B99D4] flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
                             <path d="M31.7818 35.4399C32.0048 32.7622 32.0511 24.2273 24.2284 20.4396C27.4819 18.8621 29.7319 16.2794 30.927 12.7446C31.0375 12.4174 30.862 12.0628 30.5352 11.9524C30.2065 11.8416 29.8537 12.0174 29.7429 12.3442C28.5125 15.9837 26.0472 18.5103 22.4153 19.8537C22.1703 19.9446 22.0073 20.1784 22.0073 20.4399C22.0073 20.7014 22.1703 20.9352 22.4153 21.0262C30.922 24.1735 30.7509 32.9822 30.5271 35.4399H28.6421C27.9257 28.2735 22.9335 26.1837 21.2984 25.6901V21.8013C21.2984 21.4561 21.0186 21.1763 20.6734 21.1763C20.3282 21.1763 20.0484 21.4561 20.0484 21.8013V25.6901C18.4133 26.1837 13.4211 28.2735 12.7047 35.4399H10.8208C10.743 34.5749 10.6649 32.8017 11.0442 30.7192C11.1061 30.3795 10.8809 30.0542 10.5413 29.9922C10.2007 29.9324 9.87598 30.1558 9.81433 30.4951C9.42702 32.6216 9.48623 34.4656 9.5655 35.4399C8.50849 35.4034 7.62041 36.2556 7.62256 37.3149C7.62256 38.3489 8.46362 39.1899 9.49756 39.1899H31.8493C32.8832 39.1899 33.7243 38.3489 33.7243 37.3149C33.7243 35.4399 31.7818 35.4399 31.7818 35.4399ZM20.6731 26.8105C21.5203 27.0012 26.6375 28.4395 27.3897 35.4399H13.9571C14.7097 28.4361 19.8314 27 20.6731 26.8105ZM31.8493 37.9399H9.49756C9.15302 37.9399 8.87256 37.6595 8.87256 37.3149C8.87256 36.9704 9.15302 36.6899 9.49756 36.6899H31.8493C32.1938 36.6899 32.4743 36.9704 32.4743 37.3149C32.4743 37.6595 32.1938 37.9399 31.8493 37.9399Z" fill="white"/>
@@ -279,8 +279,8 @@
             <!-- alumni slider -->
             <div class="team-slider flex px-2">
                 <!-- single slide member 1 -->
-                <div class="px-[25px] py-[50px] max-xs:px-0">
-                    <div class="flex flex-col justify-between shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5">
+                <div class="group px-[25px] py-[50px] max-xs:px-0">
+                    <div class="flex flex-col justify-between shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5 group-hover:scale-105 transform transition-transform duration-300">
                         <div class="flex justify-between mb-[5px]">
                             <img src="images/team-2.png" alt="team member">
     
@@ -344,8 +344,8 @@
                 </div>
 
                 <!-- single slide member 2 -->
-                <div class="px-[25px] py-[50px] max-xs:px-0">
-                    <div class="flex flex-col justify-between bg-white shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5">
+                <div class="group px-[25px] py-[50px] max-xs:px-0">
+                    <div class="flex flex-col justify-between bg-white shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5 group-hover:scale-105 transform transition-transform duration-300">
                         <div class="flex justify-between mb-[5px]">
                             <img src="images/team-1.png" alt="team member">
     
@@ -409,8 +409,8 @@
                 </div>
 
                 <!-- single slide member 3 -->
-                <div class="px-[25px] py-[50px] max-xs:px-0">
-                    <div class="bg-white shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5">
+                <div class="group px-[25px] py-[50px] max-xs:px-0">
+                    <div class="bg-white shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5 group-hover:scale-105 transform transition-transform duration-300">
                         <div class="flex justify-between mb-[5px]">
                             <img src="images/team-3.png" alt="team member">
     
@@ -474,8 +474,8 @@
                 </div>
 
                 <!-- single slide member 4 -->
-                <div class="px-[25px] py-[50px] max-xs:px-0">
-                    <div class="bg-white shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5">
+                <div class="group px-[25px] py-[50px] max-xs:px-0">
+                    <div class="bg-white shadow-[1px_5px_50px_0px_rgba(84,99,122,0.10)] rounded-[12px] p-5 group-hover:scale-105 transform transition-transform duration-300">
                         <div class="flex justify-between mb-[5px]">
                             <img src="images/team-1.png" alt="team member">
     
@@ -569,9 +569,10 @@
                     <!-- course item 1 -->
                     <div class="font-inter font-medium text-[#595665] border border-[#D9D9D9] rounded-[5px] overflow-hidden mb-[30px]">
                         <!-- Toggle Header -->
-                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9]">
+                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9] max-xs:px-4">
                             Unit 0 - Foundation of Programming
-                            <svg class="toggle-icon transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <svg class="toggle-icon 
+                            w-6 h-6 flex-shrink-0 transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
@@ -592,9 +593,10 @@
                     <!-- course item 2 -->
                     <div class="font-inter font-medium text-[#595665] border border-[#D9D9D9] rounded-[5px] overflow-hidden mb-[30px]">
                         <!-- Toggle Header -->
-                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9]">
+                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9] max-xs:px-4">
                             Unit 1 - Data Structures and Algorithms
-                            <svg class="transition-transform transform toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <svg class="toggle-icon 
+                            w-6 h-6 flex-shrink-0 transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
@@ -616,9 +618,10 @@
                     <!-- course item 3 -->
                     <div class="font-inter font-medium text-[#595665] border border-[#D9D9D9] rounded-[5px] overflow-hidden mb-[30px]">
                         <!-- Toggle Header -->
-                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9]">
+                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9] max-xs:px-4">
                             Unit 2 - System Design in Depth
-                            <svg class="transition-transform transform toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <svg class="toggle-icon 
+                            w-6 h-6 flex-shrink-0 transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
@@ -640,9 +643,10 @@
                     <!-- course item 4 -->
                     <div class="font-inter font-medium text-[#595665] border border-[#D9D9D9] rounded-[5px] overflow-hidden mb-[30px]">
                         <!-- Toggle Header -->
-                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9]">
+                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9] max-xs:px-4">
                             Unit 3 - Advanced Data Structures & Algorithms
-                            <svg class="transition-transform transform toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <svg class="toggle-icon 
+                            w-6 h-6 flex-shrink-0 transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
@@ -664,9 +668,10 @@
                     <!-- course item 5 -->
                     <div class="font-inter font-medium text-[#595665] border border-[#D9D9D9] rounded-[5px] overflow-hidden mb-[30px]">
                         <!-- Toggle Header -->
-                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9]">
+                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9] max-xs:px-4">
                             Unit 4 - Electives & Specialization
-                            <svg class="transition-transform transform toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <svg class="toggle-icon 
+                            w-6 h-6 flex-shrink-0 transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
@@ -688,10 +693,11 @@
                     <!-- course item 6 -->
                     <div class="font-inter font-medium text-[#595665] border border-[#D9D9D9] rounded-[5px] overflow-hidden">
                         <!-- Toggle Header -->
-                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9]">
+                        <button class="toggle-header w-full text-left px-[29px] py-[17px] hover:bg-[#D9D9D9] flex justify-between items-center cursor-pointer focus:bg-[#D9D9D9] max-xs:px-4">
                             Unit 5 - Work on End to End Projects in Partnership With Startups
-                            <svg class="transition-transform transform toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="toggle-icon 
+                            w-6 h-6 flex-shrink-0 transition-transform transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
                       
@@ -711,9 +717,9 @@
                 </div>
 
                 <!-- counselling form -->
-                <div class="w-[429px] relative max-h-max bg-white rounded-[8px] p-5 max-lg:w-[300px] max-md:w-full shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] max-2xl:w-[360px]">
-                    <div>
-                        <img src="images/apply-banner.png" alt="working on laptop" class="w-full">
+                <div class="w-[429px] relative group max-h-max bg-white rounded-[8px] p-5 max-lg:w-[300px] max-md:w-full shadow-[0px_10px_30px_0px_rgba(0,0,0,0.07)] max-2xl:w-[360px]">
+                    <div class=" rounded-[5px] overflow-hidden">
+                        <img src="images/apply-banner.png" alt="working on laptop" class="w-full transform transition-transform duration-300 group-hover:scale-105">
                     </div>
 
                     <form action="" method="post" class="flex flex-col text-[#727695] mt-[30px]">
@@ -784,8 +790,8 @@
                     <h2 class="font-poppins text-[#000000DE] text-5xl leading-[64px] tracking-[ 0.25px]">Hands-on Projects</h2>
                     <p class="text-[#00000099] leading-[32px] tracking-[0.5px] mt-5">Find out how our Mentor transformed their careers by giving Hands on Projects.</p>
 
-                    <div class="flex gap-[27px] mt-[25px] max-lg:justify-center">
-                        <!-- project box -->
+                    <div class="flex gap-[27px] mt-[25px] max-lg:justify-center max-xs:gap-4">
+                        <!-- 10+ project box -->
                         <div class="relative w-[170px] h-[62px] bg-[#20AD96] text-white leading-normal rounded-[5px] flex flex-col justify-center items-center pt-[6px]">
                             <h4 class="font-bold text-[28px] leading-[23px]">10+</h4>
                             Projects
@@ -819,7 +825,7 @@
                             </span>
                         </div>
 
-                        <!-- domain box -->
+                        <!-- 06+ domain box -->
                         <div class="relative w-[170px] h-[62px] bg-[#9747FF] text-white leading-normal rounded-[5px] flex flex-col justify-center items-center pt-[6px]">
                             <h4 class="font-bold text-[28px] leading-[23px]">06+</h4>
                             Domains
@@ -1078,16 +1084,16 @@
             <div class="team-slider flex px-2">
                 <!-- single slide member 1 -->
                 <div class="px-[26px] py-[50px] max-xs:px-0">
-                    <div class="flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white rounded-[10px]">
-                        <img src="images/mentor-1.png" alt="Sachin Sharma">
+                    <div class="group flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white rounded-[10px] overflow-hidden">
+                        <img src="images/mentor-1.png" alt="Sachin Sharma" class="group-hover:scale-105 transform transition-transform duration-300">
                         
                         <div class="h-[144px] flex flex-col justify-between p-4">
                             <div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between items-start">
                                     <h3 class="text-xl text-black leading-[24px] tracking-[0.1px]">Sachin Sharma</h3>
 
                                     <!-- logo -->
-                                     <img src="images/ms-logo-sm.png" alt="ms logo">
+                                     <img src="images/ms-logo-sm.png" alt="ms logo" class="w-22 object-contain">
                                 </div>
 
                                 <span class="text-[#00000080] text-sm leading-[24px] tracking-[0.1px]">Managing Director</span>
@@ -1108,17 +1114,17 @@
 
                 <!-- single slide member 2 -->
                 <div class="px-[26px] py-[50px] max-xs:px-0">
-                    <div class="flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white">
-                        <img src="images/mentor-3.png" alt="Sachin Sharma">
+                    <div class="group flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white overflow-hidden">
+                        <img src="images/mentor-3.png" alt="Sachin Sharma" class="group-hover:scale-105 transform transition-transform duration-300">
                         
                         <div class="h-[144px] flex flex-col justify-between p-4">
                             <div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between items-start">
                                     <h3 class="text-xl text-black leading-[24px] tracking-[0.1px]">Santosh Kumar
                                         Mishra</h3>
 
                                     <!-- logo -->
-                                     <img src="images/ms-logo-sm.png" alt="ms logo">
+                                     <img src="images/ms-logo-sm.png" alt="ms logo" class="w-22 object-contain">
                                 </div>
 
                                 <span class="text-[#00000080] text-sm leading-[24px] tracking-[0.1px]">Managing Director</span>
@@ -1139,16 +1145,16 @@
 
                 <!-- single slide member 3 -->
                 <div class="px-[26px] py-[50px] max-xs:px-0">
-                    <div class="flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white rounded-[10px]">
-                        <img src="images/mentor-2.png" alt="Sachin Sharma">
+                    <div class="group flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white rounded-[10px] overflow-hidden">
+                        <img src="images/mentor-2.png" alt="Sachin Sharma" class="group-hover:scale-105 transform transition-transform duration-300">
                         
                         <div class="h-[144px] flex flex-col justify-between p-4">
                             <div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between items-start">
                                     <h3 class="text-xl text-black leading-[24px] tracking-[0.1px]">Prem Kumar</h3>
 
                                     <!-- logo -->
-                                     <img src="images/ms-logo-sm.png" alt="ms logo">
+                                     <img src="images/ms-logo-sm.png" alt="ms logo" class="w-22 object-contain">
                                 </div>
 
                                 <span class="text-[#00000080] text-sm leading-[24px] tracking-[0.1px]">Mentorship</span>
@@ -1169,17 +1175,17 @@
 
                 <!-- single slide member 4 -->
                 <div class="px-[26px] py-[50px] max-xs:px-0">
-                    <div class="flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white">
-                        <img src="images/mentor-3.png" alt="Sachin Sharma">
+                    <div class="group flex flex-col justify-between shadow-[0px_4px_20px_2px_rgba(55,82,122,0.15)] bg-white overflow-hidden">
+                        <img src="images/mentor-3.png" alt="Sachin Sharma" class="group-hover:scale-105 transform transition-transform duration-300">
                         
                         <div class="h-[144px] flex flex-col justify-between p-4">
                             <div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between items-start">
                                     <h3 class="text-xl text-black leading-[24px] tracking-[0.1px]">Santosh Kumar
                                         Mishra</h3>
 
                                     <!-- logo -->
-                                     <img src="images/ms-logo-sm.png" alt="ms logo">
+                                     <img src="images/ms-logo-sm.png" alt="ms logo" class="w-22 h-auto max-w-none">
                                 </div>
 
                                 <span class="text-[#00000080] text-sm leading-[24px] tracking-[0.1px]">Managing Director</span>
@@ -1345,7 +1351,7 @@
                 <!-- FAQ item 1 -->
                 <div class="border border-[#C1C1C180]">
                     <button class="faq-toggle w-full font-inter font-medium text-xl leading-[28px] text-[#212121] text-left px-4 py-[18px] cursor-pointer focus:bg-[#D9D9D9] hover:bg-[#D9D9D9] flex items-center max-lg:items-start">
-                        <div class="w-5 h-5 relative flex items-center justify-center mr-[10px] max-lg:mt-1">
+                        <div class="w-5 h-5 relative flex flex-shrink-0 items-center justify-center mr-[10px] max-lg:mt-1">
                             <span class="horizontal absolute w-5 h-1 bg-[#1B99D4] rounded-[4px]"></span>
                             <span class="vertical absolute h-5 w-1 bg-[#1B99D4] rounded-[4px] transition-all duration-300"></span>
                         </div>
@@ -1372,7 +1378,7 @@
                 <!-- FAQ item 2 -->
                 <div class="border border-[#C1C1C180]">
                     <button class="faq-toggle w-full font-inter font-medium text-xl leading-[28px] text-[#212121] text-left px-4 py-[18px] cursor-pointer focus:bg-[#D9D9D9] hover:bg-[#D9D9D9] flex items-center max-lg:items-start">
-                        <div class="w-5 h-5 relative flex items-center justify-center mr-[10px] max-lg:mt-1">
+                        <div class="w-5 h-5 relative flex flex-shrink-0 items-center justify-center mr-[10px] max-lg:mt-1">
                             <span class="horizontal absolute w-5 h-1 bg-[#1B99D4] rounded-[4px]"></span>
                             <span class="vertical absolute h-5 w-1 bg-[#1B99D4] rounded-[4px] transition-all duration-300"></span>
                         </div>
@@ -1389,7 +1395,7 @@
                 <!-- FAQ item 3 -->
                 <div class="border border-[#C1C1C180]">
                     <button class="faq-toggle w-full font-inter font-medium text-xl leading-[28px] text-[#212121] text-left px-4 py-[18px] cursor-pointer focus:bg-[#D9D9D9] hover:bg-[#D9D9D9] flex items-center max-lg:items-start">
-                        <div class="w-5 h-5 relative flex items-center justify-center mr-[10px] max-lg:mt-1">
+                        <div class="w-5 h-5 relative flex flex-shrink-0 items-center justify-center mr-[10px] max-lg:mt-1">
                             <span class="horizontal absolute w-5 h-1 bg-[#1B99D4] rounded-[4px]"></span>
                             <span class="vertical absolute h-5 w-1 bg-[#1B99D4] rounded-[4px] transition-all duration-300"></span>
                         </div>
@@ -1406,7 +1412,7 @@
                 <!-- FAQ item 4 -->
                 <div class="border border-[#C1C1C180]">
                     <button class="faq-toggle w-full font-inter font-medium text-xl leading-[28px] text-[#212121] text-left px-4 py-[18px] cursor-pointer focus:bg-[#D9D9D9] hover:bg-[#D9D9D9] flex items-center max-lg:items-start">
-                        <div class="w-5 h-5 relative flex items-center justify-center mr-[10px] max-lg:mt-1">
+                        <div class="w-5 h-5 relative flex flex-shrink-0 items-center justify-center mr-[10px] max-lg:mt-1">
                             <span class="horizontal absolute w-5 h-1 bg-[#1B99D4] rounded-[4px]"></span>
                             <span class="vertical absolute h-5 w-1 bg-[#1B99D4] rounded-[4px] transition-all duration-300"></span>
                         </div>
@@ -1661,11 +1667,11 @@
         </div>
 
         <div class="font-inter font-medium text-white leading-[26.08px] text-center pt-[50px] pb-5">
-            Copyright 2024 My_Tutor| Designed By Shubham Modi.
+            Copyright 2025 My_Tutor | Designed By Shubham Modi | Developed By Zahid Hasan
         </div>
     </footer>
 
     <!-- Main Script -->
-    <script src="src/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

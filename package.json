@@ -5,7 +5,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./public/styles.css --watch"
+    "build": "npx @tailwindcss/cli -i ./docs/css/input.css -o ./docs/tailwind/styles.css --watch"
   },
   "keywords": [],
   "author": "",

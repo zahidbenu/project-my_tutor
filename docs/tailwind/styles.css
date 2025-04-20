@@ -530,6 +530,9 @@
   .h-\[144px\] {
     height: 144px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -578,8 +581,20 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-16 {
     width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-22 {
+    width: calc(var(--spacing) * 22);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
   .w-\[58px\] {
     width: 58px;
@@ -611,8 +626,23 @@
   .max-w-max {
     max-width: max-content;
   }
+  .max-w-none {
+    max-width: none;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-rotate-180 {
+    rotate: calc(180deg * -1);
+  }
+  .rotate-90 {
+    rotate: 90deg;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -652,6 +682,9 @@
   }
   .items-end {
     align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -792,6 +825,9 @@
   .bg-\[\#FDFCFE\] {
     background-color: #FDFCFE;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
@@ -809,6 +845,9 @@
   }
   .stroke-\[\#1B99D4\] {
     stroke: #1B99D4;
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -1297,6 +1336,9 @@
   .opacity-50 {
     opacity: 50%;
   }
+  .opacity-75 {
+    opacity: 75%;
+  }
   .opacity-100 {
     opacity: 100%;
   }
@@ -1353,6 +1395,16 @@
       }
     }
   }
+  .group-hover\:scale-105 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .group-hover\:scale-\[1\.15\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1396,6 +1448,14 @@
   .peer-focus\:text-\[\#1B99D4\] {
     &:is(:where(.peer):focus ~ *) {
       color: #1B99D4;
+    }
+  }
+  .hover\:-translate-y-1 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
     }
   }
   .hover\:bg-\[\#1B99D4\] {
@@ -1787,21 +1847,6 @@
       top: calc(var(--spacing) * 14);
     }
   }
-  .max-sm\:ml-\[3\%\] {
-    @media (width < 640px) {
-      margin-left: 3%;
-    }
-  }
-  .max-sm\:ml-\[26\.5\%\] {
-    @media (width < 640px) {
-      margin-left: 26.5%;
-    }
-  }
-  .max-sm\:ml-\[27\%\] {
-    @media (width < 640px) {
-      margin-left: 27%;
-    }
-  }
   .max-sm\:size-7 {
     @media (width < 640px) {
       width: calc(var(--spacing) * 7);
@@ -1821,11 +1866,6 @@
   .max-sm\:items-start {
     @media (width < 640px) {
       align-items: flex-start;
-    }
-  }
-  .max-sm\:gap-4 {
-    @media (width < 640px) {
-      gap: calc(var(--spacing) * 4);
     }
   }
   .max-sm\:gap-5 {
@@ -1859,16 +1899,6 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
-  .max-xs\:ml-\[2\%\] {
-    @media (width < 480px) {
-      margin-left: 2%;
-    }
-  }
-  .max-xs\:ml-\[22\%\] {
-    @media (width < 480px) {
-      margin-left: 22%;
-    }
-  }
   .max-xs\:flex-wrap {
     @media (width < 480px) {
       flex-wrap: wrap;
@@ -1884,6 +1914,11 @@
       gap: calc(var(--spacing) * 4);
     }
   }
+  .max-xs\:gap-5 {
+    @media (width < 480px) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
   .max-xs\:p-4 {
     @media (width < 480px) {
       padding: calc(var(--spacing) * 4);
@@ -1897,6 +1932,11 @@
   .max-xs\:px-0 {
     @media (width < 480px) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .max-xs\:px-4 {
+    @media (width < 480px) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .lg\:pr-10 {
@@ -2048,8 +2088,6 @@
     width: 33px;
     border-radius: 4px;
   }
-}
-@layer utilities {
   .social-link {
     display: flex;
     height: 50px;
@@ -2298,6 +2336,21 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2343,6 +2396,9 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
     }
   }
 }

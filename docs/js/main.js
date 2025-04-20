@@ -11,7 +11,7 @@ $(document).ready(function() {
     // download brochure
     $('.downloadBrochure').click(function() {
       const link = document.createElement('a');
-      link.href = '../docs/brochure.pdf';
+      link.href = '../docs/file/brochure.pdf';
       link.download = 'brochure.pdf';
       document.body.appendChild(link);
       link.click();
@@ -57,7 +57,7 @@ $(document).ready(function() {
         const icon = $(this).find('.toggle-icon');
 
         $(".toggle-content").not(content).slideUp(300);
-        $(".toggle-icon").not(icon).toggleClass('rotate-180');
+        $(".toggle-icon").not(icon).removeClass('rotate-180');
     
         content.slideToggle(300);
         icon.toggleClass('rotate-180');
