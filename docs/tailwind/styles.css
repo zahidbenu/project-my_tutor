@@ -924,9 +924,6 @@
   .py-\[2px\] {
     padding-block: 2px;
   }
-  .py-\[5px\] {
-    padding-block: 5px;
-  }
   .py-\[9px\] {
     padding-block: 9px;
   }
@@ -1019,9 +1016,6 @@
   }
   .pb-\[2px\] {
     padding-bottom: 2px;
-  }
-  .pb-\[3px\] {
-    padding-bottom: 3px;
   }
   .pb-\[4px\] {
     padding-bottom: 4px;
@@ -1425,26 +1419,6 @@
       }
     }
   }
-  .group-hover\:scale-115 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-scale-x: 115%;
-        --tw-scale-y: 115%;
-        --tw-scale-z: 115%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .group-hover\:scale-125 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-scale-x: 125%;
-        --tw-scale-y: 125%;
-        --tw-scale-z: 125%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .group-hover\:scale-\[1\.02\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1463,13 +1437,6 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         scale: 1.15;
-      }
-    }
-  }
-  .group-hover\:scale-\[120\%\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        scale: 120%;
       }
     }
   }
@@ -1980,11 +1947,6 @@
   .max-xs\:gap-4 {
     @media (width < 480px) {
       gap: calc(var(--spacing) * 4);
-    }
-  }
-  .max-xs\:gap-5 {
-    @media (width < 480px) {
-      gap: calc(var(--spacing) * 5);
     }
   }
   .max-xs\:p-4 {
