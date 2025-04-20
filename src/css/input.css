@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Source+Sans+3&display=swap');
+
+@config "../../tailwind.config.js";
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply font-roboto font-normal text-base leading-[23.764px] text-[#6F6B80] bg-[#FEFEFE];
+  }
+
+  h1 {
+    @apply font-bold;
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  nav ul li a {
+    @apply relative inline-block font-inter font-medium text-base leading-[24px] tracking-[0.5px] text-[#424352] py-2 px-[22.5px] transition-colors duration-300 hover:text-[#1B99D4];
+  }
+
+  nav ul li a span {
+    @apply absolute left-0 bottom-0 w-0 h-[2px] rounded-full bg-[#1B99D4] transition-all duration-300 group-hover:w-full;
+  }
+  
+  form input,
+  form select {
+    @apply text-[15px] text-[#727695] leading-normal tracking-[0.1px] border border-[#E6E9FC] rounded-[5px] p-3 outline-[#252525] focus:outline focus:bg-white placeholder:text-[#727695] mb-[30px] ;
+  }
+  
+}
+
+@layer components {
+  /* .container {
+    @apply mx-auto px-3;
+  } */
+
+  .btn {
+    @apply block font-medium text-white leading-[24px] bg-[#1B99D4] rounded-[5px] transition duration-300 hover:bg-[#017CBB];
+  }
+
+  /* slick */
+  .slick-dots {
+    @apply flex justify-center;
+  }
+  .slick-dots li button {
+    @apply w-2 h-2 bg-[#1B99D4] rounded-full text-transparent overflow-hidden mx-[2px] cursor-pointer outline-none;
+  }
+
+  .slick-dots li.slick-active button {
+    @apply w-[33px] h-[8px] rounded-[4px];
+  }
+}
+
+@layer utilities {
+   
+    /* footer */ 
+    .social-link {
+        @apply w-[50px] h-[50px] flex justify-center items-center rounded-[4px] bg-[#31A3D8] hover:bg-[#56b4df];
+    }
+
+    .footer-menu li a {
+      @apply font-medium leading-[26px] flex items-center mb-[27px] transform transition-transform duration-300 hover:translate-x-1 hover:text-[#dbe6eb];
+    }
+
+    .footer-contact li a {
+      @apply font-medium leading-[26.08px] flex mb-[15px] transition duration-300 hover:text-[#dbe6eb];
+    }
+}
