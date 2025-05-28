@@ -20,7 +20,6 @@ module.exports = {
         md: '768px',
         lg: '1024px',
         xl: '1326px',
-       '2xl': '1536px',
       },
       container: {
         center: true,
@@ -30,8 +29,7 @@ module.exports = {
           sm: '640px',
           md: '768px',
           lg: '1024px',
-          xl: '1326px',
-         '2xl': '1536px',
+          xl: '1326px'
         },
       },
     }

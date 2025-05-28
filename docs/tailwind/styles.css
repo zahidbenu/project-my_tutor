@@ -204,6 +204,9 @@
   .static {
     position: static;
   }
+  .sticky {
+    position: sticky;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -284,9 +287,6 @@
     @media (width >= 1326px) {
       max-width: 1326px;
     }
-    @media (width >= 1536px) {
-      max-width: 1536px;
-    }
   }
   .container {
     margin-inline: auto;
@@ -308,9 +308,6 @@
     }
     @media (width >= 1326px) {
       max-width: 1326px;
-    }
-    @media (width >= 1536px) {
-      max-width: 1536px;
     }
   }
   .mx-6 {
@@ -542,6 +539,9 @@
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
   .w-1\/3 {
     width: calc(1/3 * 100%);
   }
@@ -581,20 +581,11 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
   .w-22 {
     width: calc(var(--spacing) * 22);
-  }
-  .w-24 {
-    width: calc(var(--spacing) * 24);
   }
   .w-\[58px\] {
     width: 58px;
@@ -637,12 +628,6 @@
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .-rotate-180 {
-    rotate: calc(180deg * -1);
-  }
-  .rotate-90 {
-    rotate: 90deg;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -825,9 +810,6 @@
   .bg-\[\#FDFCFE\] {
     background-color: #FDFCFE;
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
@@ -837,11 +819,23 @@
   .bg-\[url\(images\/hero-banner-pattern\.png\)\] {
     background-image: url(images/hero-banner-pattern.png);
   }
+  .bg-contain {
+    background-size: contain;
+  }
   .bg-cover {
     background-size: cover;
   }
   .bg-\[position\:left_bottom_-15px\] {
     background-position: left bottom -15px;
+  }
+  .bg-\[position\:left_bottom_-20px\] {
+    background-position: left bottom -20px;
+  }
+  .bg-\[position\:top-20px\] {
+    background-position: top-20px;
+  }
+  .bg-\[position\:top_-20px\] {
+    background-position: top -20px;
   }
   .stroke-\[\#1B99D4\] {
     stroke: #1B99D4;
@@ -972,9 +966,6 @@
   .pt-19 {
     padding-top: calc(var(--spacing) * 19);
   }
-  .pt-\[5px\] {
-    padding-top: 5px;
-  }
   .pt-\[6px\] {
     padding-top: 6px;
   }
@@ -1013,9 +1004,6 @@
   }
   .pb-9 {
     padding-bottom: calc(var(--spacing) * 9);
-  }
-  .pb-\[2px\] {
-    padding-bottom: 2px;
   }
   .pb-\[4px\] {
     padding-bottom: 4px;
@@ -1342,9 +1330,6 @@
   .opacity-50 {
     opacity: 50%;
   }
-  .opacity-75 {
-    opacity: 75%;
-  }
   .opacity-100 {
     opacity: 100%;
   }
@@ -1545,66 +1530,6 @@
   .focus\:bg-\[\#D9D9D9\] {
     &:focus {
       background-color: #D9D9D9;
-    }
-  }
-  .max-2xl\:mx-\[9\%\] {
-    @media (width < 1536px) {
-      margin-inline: 9%;
-    }
-  }
-  .max-2xl\:-mt-15 {
-    @media (width < 1536px) {
-      margin-top: calc(var(--spacing) * -15);
-    }
-  }
-  .max-2xl\:w-2\/5 {
-    @media (width < 1536px) {
-      width: calc(2/5 * 100%);
-    }
-  }
-  .max-2xl\:w-\[45\%\] {
-    @media (width < 1536px) {
-      width: 45%;
-    }
-  }
-  .max-2xl\:w-\[55\%\] {
-    @media (width < 1536px) {
-      width: 55%;
-    }
-  }
-  .max-2xl\:w-\[360px\] {
-    @media (width < 1536px) {
-      width: 360px;
-    }
-  }
-  .max-2xl\:w-\[594px\] {
-    @media (width < 1536px) {
-      width: 594px;
-    }
-  }
-  .max-2xl\:w-\[680px\] {
-    @media (width < 1536px) {
-      width: 680px;
-    }
-  }
-  .max-2xl\:w-\[904px\] {
-    @media (width < 1536px) {
-      width: 904px;
-    }
-  }
-  .max-2xl\:px-\[7\%\] {
-    @media (width < 1536px) {
-      padding-inline: 7%;
-    }
-  }
-  .max-2xl\:py-10 {
-    @media (width < 1536px) {
-      padding-block: calc(var(--spacing) * 10);
-    }
-  }
-  .max-2xl\:pr-25 {
-    @media (width < 1536px) {
-      padding-right: calc(var(--spacing) * 25);
     }
   }
   .max-xl\:-ml-30 {
@@ -1969,19 +1894,19 @@
       padding-inline: calc(var(--spacing) * 4);
     }
   }
-  .lg\:pr-10 {
-    @media (width >= 1024px) {
-      padding-right: calc(var(--spacing) * 10);
-    }
-  }
   .\32 xl\:w-\[2120px\] {
-    @media (width >= 1536px) {
+    @media (width >= 96rem) {
       width: 2120px;
     }
   }
   .\32 xl\:pr-20 {
-    @media (width >= 1536px) {
+    @media (width >= 96rem) {
       padding-right: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pr-10 {
+    @media (width >= 1024px) {
+      padding-right: calc(var(--spacing) * 10);
     }
   }
 }
