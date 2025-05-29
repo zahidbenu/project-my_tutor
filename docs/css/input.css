@@ -27,7 +27,7 @@
   
   form input,
   form select {
-    @apply text-[15px] text-[#727695] leading-normal tracking-[0.1px] border border-[#E6E9FC] rounded-[5px] p-3 outline-[#252525] focus:outline focus:bg-white placeholder:text-[#727695] mb-[30px] ;
+    @apply text-[15px] text-[#727695] leading-normal tracking-[0.1px] border border-[#E6E9FC] rounded-[5px] p-[10px] px-[12px] outline-[#252525] focus:outline focus:bg-white placeholder:text-[#727695] mb-[30px] ;
   }
   
 }
